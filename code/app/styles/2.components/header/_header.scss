@@ -1,10 +1,21 @@
 .c-header {
   background: #ffffff;
-  display: flex inline;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
 
+  &-search{
+    width: 75%;
+    margin: 2rem;
+    float: right;
+
+    &-container{
+      width: 100%;
+      margin: 0;
+      position: relative;
+    }
+  }
   &-title{
     margin: 0 0 0 5rem;
   }
@@ -15,11 +26,12 @@
     justify-content: space-between;
     align-content: center;
     padding-top: 2rem;
+    //margin-top: ;
 
     ul{
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
       list-style: none;
       line-height: 1;
       float: left;
