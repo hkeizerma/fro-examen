@@ -256,14 +256,9 @@ figure {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
-@media (min-width: 1600px) {
-  body {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-}
 /*------------------------------------*\
   #TYPOGHRAPY
 \*------------------------------------*/
@@ -463,9 +458,49 @@ tr:after:last-child {
     max-width: calc(100% - 40px);
   }
 }
+.o-container-hero {
+  margin: 0;
+  width: 100%;
+  height: 20rem;
+  color: #ffffff;
+  background-image: url("../media/placeholder.jpg");
+  text-align: center;
+}
 
 .c-header {
-  background: #8d6aa5;
+  background: #ffffff;
+  display: flex inline;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-header-title {
+  margin: 0 0 0 5rem;
+}
+.c-header-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 2rem;
+}
+.c-header-nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  list-style: none;
+  line-height: 1;
+  float: left;
+}
+.c-header-nav ul li {
+  margin-left: 2rem;
+}
+.c-header-reg {
+  margin-right: 5rem;
+  line-height: 3;
+}
+.c-header-reg :first-child {
+  margin-right: 2rem;
 }
 
 .u-bg-cover-center {

@@ -1,3 +1,40 @@
 .c-header {
-  background: #8d6aa5;
+  background: #ffffff;
+  display: flex inline;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  &-title{
+    margin: 0 0 0 5rem;
+  }
+  &-nav{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 2rem;
+
+    ul{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      list-style: none;
+      line-height: 1;
+      float: left;
+
+      li{
+        margin-left: 2rem;
+      }
+    }
+  }
+  &-reg{
+    margin-right: 5rem;
+    line-height: 3;
+
+    :first-child{
+      margin-right: 2rem;
+    }
+  }
 }
