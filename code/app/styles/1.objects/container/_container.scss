@@ -45,7 +45,7 @@
     padding: 15rem;
 
     &-content{
-      margin-top: 20rem;
+      margin-top: 15rem;
 
       a{
         position: relative;
@@ -105,7 +105,7 @@
   }
 
   &-nextto{
-    margin: 15rem;
+    margin: 10rem;
     margin-bottom: 5rem;
     display: flex;
     text-align: center;
@@ -113,6 +113,7 @@
     &-item{
       display: flex;
       flex-flow: column nowrap;
+      align-content: space-between;
     }
     &-l{
       border-right: 0.5rem solid #70806d;
@@ -122,25 +123,26 @@
       width: 50%;
     }
     h2{
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 700;
     }
     p{
-      margin-top: 10rem;
+      margin-top: 5rem;
       margin-left: 15rem;
       margin-right: 15rem;
       font-size: 3rem;
       text-align: center;
     }
     a{
-      margin: 10rem;
+      margin: 5rem;
       color: #ffffff;
       background: none;
       padding: 1.5rem;
       border: 0.2rem solid #74b179;
       border-radius: 2rem;
       background: #74b179;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      vertical-align: bottom;
 
 
       &:hover{
@@ -167,14 +169,14 @@
     text-align: center;
 
     h2{
-      font-size: 7rem;
+      font-size: 5rem;
       font-weight: 700;
     }
     p{
       margin-top: 10rem;
       margin-left: 15rem;
       margin-right: 15rem;
-      font-size: 3rem;
+      font-size: 2rem;
     }
     a{
       margin-top: 5rem;
