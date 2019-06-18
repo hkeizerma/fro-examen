@@ -607,6 +607,49 @@ tr:after:last-child {
   border: 0.2rem solid #8ed493;
   background: #8ed493;
 }
+.o-container-catalog {
+  box-shadow: inset 0 0 2rem #000000;
+  background: #ecffe7;
+  padding: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.o-container-catalog :nth-of-type(even) {
+  background: #f6fff4;
+}
+.o-container-item {
+  width: 30%;
+  min-width: 350px;
+  box-shadow: 0 0 2rem #000000;
+  background: #ffffff;
+  text-align: center;
+  padding: 5rem;
+  display: flex;
+  flex-flow: nowrap column;
+  align-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.o-container-item img {
+  max-width: 100%;
+  margin: 3rem;
+}
+.o-container-item p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.o-container-item a {
+  text-align: center;
+  background: #74b179;
+  color: #ffffff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 5rem;
+}
+.o-container-item a:hover {
+  background: #8ed493;
+}
 
 .o-dropbtn {
   color: white;
@@ -622,20 +665,20 @@ tr:after:last-child {
 .o-dropup-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #74b179;
   min-width: 160px;
   bottom: 50px;
   margin-bottom: 1rem;
   z-index: 1;
 }
 .o-dropup-content a {
-  color: black;
+  color: #ffffff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 .o-dropup-content a:hover {
-  background-color: #ccc;
+  background-color: #8ed493;
 }
 
 .o-dropup:hover .o-dropup-content {
