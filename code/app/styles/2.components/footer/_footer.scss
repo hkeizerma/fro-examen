@@ -1,5 +1,5 @@
 .c-footer{
-  background: #74b179;
+  background: #17252a;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -20,8 +20,11 @@
           margin-left: 0;
         }
         a{
-          text-decoration: none;
-          color: #ffffff;
+          color: #FEFFFF;
+
+          &:hover{
+            color: #3aafa9;
+          }
         }
       }
     }
