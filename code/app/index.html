@@ -26,8 +26,65 @@
           <li><a href="">Contact</a></li>
         </ul>
         <div class="c-header-reg">
-          <a href="">Registreer</a>
-          <a href="">Log in</a>
+          <a id="regBtn">Registreer</a>
+
+          <div class="o-modal-reg" id="regModal">
+            <div style="margin: auto;">
+              <span class="close">&timesbar;</span>
+              <form class="form">{:autocomplete=>"off"}
+                <div class="control">
+                  <h1>
+                    Sign In
+                  </h1>
+                </div>
+                <div class="control block-cube block-input">
+                  <input name = "username" type="text" placeholder="Username"><div class="bg-top">
+                  <div class="bg-inner"></div>
+                </div>
+                  <div class="bg-right">
+                    <div class="bg-inner"></div>
+                  </div>
+                  <div class="bg">
+                    <div class="bg-inner"></div>
+                  </div>
+                </div>
+                <div class="control block-cube block-input">
+                  <input name = "password" type="password" placeholder="Password"><div class="bg-top">
+                  <div class="bg-inner"></div>
+                </div>
+                  <div class="bg-right">
+                    <div class="bg-inner"></div>
+                  </div>
+                  <div class="bg">
+                    <div class="bg-inner"></div>
+                  </div>
+                </div>
+                <button class="btn block-cube block-cube-hover" type="button">
+                  <div class="bg-top">
+                    <div class="bg-inner"></div>
+                  </div>
+                  <div class="bg-right">
+                    <div class="bg-inner"></div>
+                  </div>
+                  <div class="bg">
+                    <div class="bg-inner"></div>
+                  </div>
+                  <div class="text">
+                    Log In
+                  </div></button>
+              </form>
+            </div>
+          </div>
+
+          <a id="loginBtn">Log in</a>
+
+          <div class="o-modal-login" id="loginModal">
+            <div style="margin: auto;">
+              <span class="close">&timesbar;</span>
+              <h2>content2</h2>
+            </div>
+          </div>
+
         </div>
       </nav>
 
@@ -139,5 +196,7 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" rel="script" src="scripts/main.js">
+  </script>
 </body>
 </html>
