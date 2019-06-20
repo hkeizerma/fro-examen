@@ -465,7 +465,7 @@ tr:after:last-child {
 }
 .o-container-hero {
   width: 100%;
-  color: #feffff;
+  color: #fefefe;
   background: linear-gradient(0.25turn, #2b7a78, #3aafa9);
   background-size: cover;
   padding: 15rem;
@@ -476,10 +476,10 @@ tr:after:last-child {
 .o-container-hero-content a {
   position: relative;
   top: 5rem;
-  color: #feffff;
+  color: #fefefe;
   background: none;
   padding: 1.5rem;
-  border: 0.2rem solid #feffff;
+  border: 0.2rem solid #fefefe;
   border-radius: 2rem;
 }
 .o-container-hero-content a:hover {
@@ -499,7 +499,7 @@ tr:after:last-child {
   flex-direction: row;
   margin: 5rem;
   box-shadow: 0 0 2rem #000000;
-  background: #feffff;
+  background: #fefefe;
 }
 .o-container-product-img {
   width: 30%;
@@ -553,7 +553,7 @@ tr:after:last-child {
 }
 .o-container-nextto a {
   margin: 5rem;
-  color: #feffff;
+  color: #fefefe;
   background: none;
   padding: 1.5rem;
   border: 0.2rem solid #3aafa9;
@@ -563,7 +563,7 @@ tr:after:last-child {
   vertical-align: bottom;
 }
 .o-container-nextto a:hover {
-  color: #feffff;
+  color: #fefefe;
   border: 0.2rem solid #2b7a78;
   background: #2b7a78;
 }
@@ -593,7 +593,7 @@ tr:after:last-child {
 }
 .o-container-bannertxt a {
   margin-top: 5rem;
-  color: #feffff;
+  color: #fefefe;
   background: none;
   padding: 1.5rem;
   border: 0.2rem solid #3aafa9;
@@ -602,7 +602,7 @@ tr:after:last-child {
   font-size: 2.5rem;
 }
 .o-container-bannertxt a:hover {
-  color: #feffff;
+  color: #fefefe;
   border: 0.2rem solid #2b7a78;
   background: #2b7a78;
 }
@@ -621,7 +621,7 @@ tr:after:last-child {
   width: 30%;
   min-width: 350px;
   box-shadow: 0 0 2rem #000000;
-  background: #feffff;
+  background: #fefefe;
   text-align: center;
   padding: 5rem;
   display: flex;
@@ -641,7 +641,7 @@ tr:after:last-child {
 .o-container-item a {
   text-align: center;
   background: #3aafa9;
-  color: #feffff;
+  color: #fefefe;
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 5rem;
@@ -693,7 +693,7 @@ tr:after:last-child {
   border-right: 0.5rem solid #2b7a78;
 }
 .o-container-details-r-price div a {
-  color: #feffff;
+  color: #fefefe;
   background: #3aafa9;
   padding: 1rem;
   border-radius: 5rem;
