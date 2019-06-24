@@ -1,4 +1,19 @@
 # robotstxt.org/
 
 User-agent: * 
-Disallow:
+Disallow: /media/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /test/
+Disallow: /*?
+Disallow: /*js
+Disallow: /*css
+
+User-agent: googlebot
+Disallow: /media/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /test/
+Disallow: /*?
+Disallow: /*js
+Disallow: /*css

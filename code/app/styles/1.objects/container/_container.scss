@@ -672,6 +672,8 @@ $pink-color: #ff7094;
       padding: 5%;
       width: 50%;
       height: auto;
+      display: flex;
+      flex-flow: column nowrap;
     }
     &-r{
       padding: 5%;
