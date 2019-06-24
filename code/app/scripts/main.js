@@ -37,3 +37,8 @@ window.onclick = function(event) {
         modal2.style.display = 'none';
     }
 };
+
+function initMap() { // The location of Uluru
+    let uluru = {lat: 52.66971587445287, lng: 4.858052194915672}; // The map, centered at Uluru
+    let map = new google.maps.Map( document.getElementById('map'), {zoom: 6, center: uluru}); // The marker, positioned at Uluru
+    let marker = new google.maps.Marker({position: uluru, map: map}); }
