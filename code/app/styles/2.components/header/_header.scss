@@ -1,39 +1,17 @@
+$slate-color: rgb(16,24,50);
+$blue-color: #6c6cf0;
+$pink-color: #ff7094;
+
 .c-header {
-  background: #ffffff;
   display: flex;
   flex-direction: column;
+  z-index: 1;
   justify-content: space-between;
+  background: linear-gradient(0.25turn, $pink-color , $blue-color);
 
-
-  &-search{
-    width: 80%;
-    margin: 2rem;
-    float: right;
-
-    &-container{
-      width: 100%;
-      margin: 0;
-      position: relative;
-      background: $blue-color;
-    }
-    input{
-      width: 50%;
-      justify-self: center;
-    }
-  }
   &-title{
-    position: absolute;
-    text-align: center;
-    left: 5rem;
-    top: 4rem;
-    width: 20rem;
-    height: 6rem;
-    border: 5px $blue-color solid;
-    background: $blue-color;
-    border-radius: 1rem;
-    color: #ffffff !important;
-    z-index: 1;
-
+    margin: 0;
+    line-height: 2;
   }
   &-nav{
     list-style: none;
@@ -41,7 +19,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-content: center;
-    margin-left: 10%;
+    margin-left: 5%;
     font-family: 'Montserrat', sans-serif;
     box-shadow: inset 8px 6px -6px black;
 
@@ -70,9 +48,27 @@
   &-reg{
     margin-right: 5rem;
     line-height: 3;
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     :first-child{
       margin-right: 2rem;
     }
   }
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + section {
+  padding-top: 15rem;
+}
+
+.sticky + .o-container-questions{
+  padding-top: 21rem;
+}
+.sticky + .o-container-details{
+  padding-top: 21rem;
 }

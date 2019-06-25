@@ -38,7 +38,21 @@ window.onclick = function(event) {
     }
 };
 
-function initMap() { // The location of Uluru
-    let uluru = {lat: 52.66971587445287, lng: 4.858052194915672}; // The map, centered at Uluru
-    let map = new google.maps.Map( document.getElementById('map'), {zoom: 6, center: uluru}); // The marker, positioned at Uluru
-    let marker = new google.maps.Marker({position: uluru, map: map}); }
+
+window.onscroll = function () {fixHeader()};
+let header = document.getElementById('header');
+let sticky = header.offsetTop;
+
+function fixHeader() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+}
+
+
+function initMap() { // The location of Middenwaard
+    let Middenwaard = {lat: 52.663029, lng: 4.828409};
+    let map = new google.maps.Map( document.getElementById('map'), {zoom: 6, center: Middenwaard});
+    let marker = new google.maps.Marker({position: Middenwaard, map: map}); }

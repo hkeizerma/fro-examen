@@ -12,65 +12,84 @@
 </head>
 <body>
 
-<header class="c-header">
-    <div class="c-header-title">
-        <a href="index.html"><h1 style="color: #ffffff">Turtler</h1></a>
-    </div>
+<header class="c-header" id="header">
     <div class="c-header-search-container">
         <nav class="c-header-nav">
+            <h2 class="c-header-title"><a href="index.html">Turtler</a></h2>
             <ul>
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="producten.html">Onze producten</a></li>
                 <li><a href="">Hoe werkt het</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="c-header-reg">
                 <a id="regBtn">Registreer</a>
+                <div>
+                    <div class="o-modal o-modal-reg" id="regModal">
+                        <div style="margin: auto;">
+                            <span class="close">&timesbar;</span>
+                            <h2>registreer</h2>
+                            <br>
+                            <label for="inp" class="inp">
+                                <input type="text" id="inp" placeholder="&nbsp;">
+                                <span class="label">Naam</span>
+                                <span class="border"></span>
+                            </label>
+                            <br>
+                            <label for="inp2" class="inp">
+                                <input type="text" id="inp2" placeholder="&nbsp;">
+                                <span class="label">Mail</span>
+                                <span class="border"></span>
+                            </label>
+                        </div>
+                    </div>
 
-                <div class="o-modal-reg" id="regModal">
-                    <div>
-                        <span class="close">&timesbar;</span>
-                        <h2>content1</h2>
+                    <a id="loginBtn">Log in</a>
+
+                    <div class="o-modal o-modal-login" id="loginModal">
+                        <div style="margin: auto;">
+                            <span class="close">&timesbar;</span>
+                            <h2>content2</h2>
+                        </div>
                     </div>
                 </div>
-
-                <a id="loginBtn">Log in</a>
-
-                <div class="o-modal-login" id="loginModal">
-                    <div>
-                        <span class="close">&timesbar;</span>
-                        <h2>content2</h2>
-                    </div>
-                </div>
-
             </div>
         </nav>
+
     </div>
 </header>
 
 <section class="o-container-questions">
     <div class="o-container-questions-l">
-        <img src="media/box.png" alt="doos">
-    </div>
-    <div class="o-container-nextto-r">
-        <h2>Waar komt het eten vandaan</h2>
+        <h2>Hoe werkt het?</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis deserunt dolor doloremque error fugiat laudantium nam omnis, perspiciatis possimus quis ratione vero. Assumenda dolor earum odit rerum temporibus voluptate.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam architecto consequatur cumque, eos error fuga in, ipsam iusto labore modi officia pariatur praesentium provident quam quia similique tempore temporibus!
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci dolore dolorum fuga in itaque minus mollitia nihil nostrum porro, qui rem rerum, sunt tempora! Pariatur perspiciatis porro velit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi suscipit temporibus ut voluptates? Ad debitis dolor, doloremque et expedita illo ipsum laborum molestiae molestias nisi, perspiciatis quasi quia tempora voluptatum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum hic laborum quas! Alias amet aut explicabo iusto reprehenderit sed, voluptate voluptatem! Asperiores atque laboriosam modi natus quidem, recusandae suscipit voluptate!
+        </p>
+    </div>
+    <div class="o-container-questions-r">
+        <img src="media/deliveryman.jpg" style="height: 100%; width: auto" alt="man">
+    </div>
+    <div class="o-container-questions-l">
+        <img src="media/graan.jpeg" alt="doos">
+    </div>
+    <div class="o-container-questions-r">
+        <h2>Waar komt het eten vandaan?</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis deserunt dolor doloremque error fugiat laudantium nam omnis, perspiciatis possimus quis ratione vero. Assumenda dolor earum odit rerum temporibus voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam architecto consequatur cumque, eos error fuga in, ipsam iusto labore modi officia pariatur praesentium provident quam quia similique tempore temporibus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci dolore dolorum fuga in itaque minus mollitia nihil nostrum porro, qui rem rerum, sunt tempora! Pariatur perspiciatis porro velit.
         </p>
     </div>
     <div class="o-container-questions-l">
-        <h2>wie profiteerd hiervan</h2>
+        <h2>wie profiteerd hiervan?</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis deserunt dolor doloremque error fugiat laudantium nam omnis, perspiciatis possimus quis ratione vero. Assumenda dolor earum odit rerum temporibus voluptate.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam architecto consequatur cumque, eos error fuga in, ipsam iusto labore modi officia pariatur praesentium provident quam quia similique tempore temporibus!
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci dolore dolorum fuga in itaque minus mollitia nihil nostrum porro, qui rem rerum, sunt tempora! Pariatur perspiciatis porro velit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi suscipit temporibus ut voluptates? Ad debitis dolor, doloremque et expedita illo ipsum laborum molestiae molestias nisi, perspiciatis quasi quia tempora voluptatum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum hic laborum quas! Alias amet aut explicabo iusto reprehenderit sed, voluptate voluptatem! Asperiores atque laboriosam modi natus quidem, recusandae suscipit voluptate!
         </p>
     </div>
     <div class="o-container-questions-r">
@@ -85,11 +104,11 @@
     <h3>Turtler</h3>
     <div class="c-footer-links">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Onze producten</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="producten.html">Onze producten</a></li>
             <li><a href="">Hoe werkt het</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     <div class="c-footer-share o-dropup">

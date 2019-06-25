@@ -12,44 +12,6 @@
 </head>
 <body>
 
-  <header class="c-header">
-    <div class="c-header-title">
-      <a href="index.html"><h1 style="color: #ffffff">Turtler</h1></a>
-    </div>
-    <div class="c-header-search-container">
-      <nav class="c-header-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="producten.html">Onze producten</a></li>
-          <li><a href="">Hoe werkt het</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <div class="c-header-reg">
-          <a id="regBtn">Registreer</a>
-
-          <div class="o-modal-reg" id="regModal">
-            <div style="margin: auto;">
-              <span class="close">&timesbar;</span>
-              <h2>registreer</h2>
-            </div>
-          </div>
-
-          <a id="loginBtn">Log in</a>
-
-          <div class="o-modal-login" id="loginModal">
-            <div style="margin: auto;">
-              <span class="close">&timesbar;</span>
-              <h2>content2</h2>
-            </div>
-          </div>
-
-        </div>
-      </nav>
-
-    </div>
-  </header>
-
   <section class="o-container-hero">
     <div class="o-container-hero-content">
       <h1><span>hallo</span></h1>
@@ -61,6 +23,75 @@
       </a>
     </div>
   </section>
+
+  <header class="c-header" id="header">
+    <div class="c-header-search-container">
+      <nav class="c-header-nav">
+        <h2 class="c-header-title"><a href="index.html">Turtler</a></h2>
+        <ul>
+
+          <li><a href="index.html">Home</a></li>
+          <li><a href="producten.html">Onze producten</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="c-header-reg">
+
+          <a id="regBtn">Registreer</a>
+
+          <div>
+            <div class="o-modal o-modal-reg" id="regModal">
+              <div style="margin: auto;">
+                <span class="close">&timesbar;</span>
+                <h2>registreer</h2>
+                <br>
+                <form class="o-modal-form">
+                  <label for="inp" class="inp">
+                    <input type="text" id="inp" placeholder="&nbsp;">
+                    <span class="label">Naam</span>
+                    <span class="border"></span>
+                  </label>
+                  <label for="inp2" class="inp">
+                    <input type="text" id="inp2" placeholder="&nbsp;">
+                    <span class="label">Mail</span>
+                    <span class="border"></span>
+                  </label>
+                  <label for="inp3" class="inp">
+                    <input type="text" id="inp3" placeholder="&nbsp;">
+                    <span class="label">Wachtwoord</span>
+                    <span class="border"></span>
+                  </label>
+                </form>
+              </div>
+            </div>
+
+            <a id="loginBtn">Log in</a>
+
+            <div class="o-modal o-modal-login" id="loginModal">
+              <div style="margin: auto;">
+                <span class="close">&timesbar;</span>
+                <h2>Login</h2>
+                <form class="o-modal-form">
+                  <label for="inp4" class="inp">
+                    <input type="text" id="inp4" placeholder="&nbsp;">
+                    <span class="label">Naam</span>
+                    <span class="border"></span>
+                  </label>
+                  <br>
+                  <label for="inp5" class="inp">
+                    <input type="text" id="inp5" placeholder="&nbsp;">
+                    <span class="label">Wachtwoord</span>
+                    <span class="border"></span>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
 
   <section class="o-container-products">
     <div class="o-container-product">
@@ -143,7 +174,7 @@
           <li><a href="producten.html">Onze producten</a></li>
           <li><a href="">Hoe werkt het</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     <div class="c-footer-share o-dropup">
@@ -155,7 +186,9 @@
       </div>
     </div>
   </footer>
+
   <script type="text/javascript" rel="script" src="scripts/main.js">
   </script>
+
 </body>
 </html>
