@@ -38,6 +38,16 @@ window.onclick = function(event) {
     }
 };
 
+function resNav(){
+    let nav = document.getElementById('nav');
+    if (nav.className === 'c-header-nav') {
+        nav.className += ' responsive';
+        console.log('added responsive class');
+    } else{
+        nav.className = 'c-header-nav';
+        console.log('removed responsive class');
+    }
+}
 
 window.onscroll = function () {fixHeader()};
 let header = document.getElementById('header');

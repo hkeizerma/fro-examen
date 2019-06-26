@@ -1,27 +1,29 @@
 .o-modal{
   display: flex;
   flex-flow: nowrap column;
+  justify-content: space-around;
 
   &-reg{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 30rem; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30rem;
     left: 0;
     top: 0;
     margin: auto;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     div{
       background-color: #fefefe;
       border: 1px solid #888;
       margin: auto;
       text-align: center;
       padding: 5rem;
-      width: 40%;
+      max-width: 65rem;
+      width: auto;
       height: 50rem;
       .close{
         color: #aaaaaa;
@@ -37,25 +39,26 @@
     }
   }
   &-login{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 30rem; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30rem;
     left: 0;
     top: 0;
     margin: auto;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     div{
       background-color: #fefefe;
       border: 1px solid #888;
       margin: auto;
       text-align: center;
       padding: 5rem;
-      width: 40%;
+      max-width: 65rem;
+      width: auto;
       height: 50rem;
       .close{
         color: #aaaaaa;
@@ -72,8 +75,13 @@
   }
   &-form{
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: space-evenly;
+    flex-flow: column wrap;
+    max-height: 30rem;
+    justify-content: space-around;
+
+    &:last-of-type{
+      display: flex;
+      align-content: space-evenly;
+    }
   }
 }

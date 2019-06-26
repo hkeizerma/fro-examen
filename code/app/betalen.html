@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>Onze producten</title>
 </head>
+<style>
+    .sticky + section{
+        padding-top: 7rem;
+    }
+</style>
 <body>
 
 <header class="c-header" id="header">
@@ -45,10 +50,11 @@
                                     <span class="border"></span>
                                 </label>
                                 <label for="inp3" class="inp">
-                                    <input type="text" id="inp3" placeholder="&nbsp;">
+                                    <input type="password" id="inp3" placeholder="&nbsp;">
                                     <span class="label">Wachtwoord</span>
                                     <span class="border"></span>
                                 </label>
+                                <a class="rainbow-btn" style="color: #1a1a1a">Registreer</a>
                             </form>
                         </div>
                     </div>
@@ -67,10 +73,11 @@
                                 </label>
                                 <br>
                                 <label for="inp5" class="inp">
-                                    <input type="text" id="inp5" placeholder="&nbsp;">
+                                    <input type="password" id="inp5" placeholder="&nbsp;">
                                     <span class="label">Wachtwoord</span>
                                     <span class="border"></span>
                                 </label>
+                                <a class="rainbow-btn" style="color: #1a1a1a">Log in</a>
                             </form>
                         </div>
                     </div>
@@ -81,7 +88,73 @@
     </div>
 </header>
 
-<section>
+<section class="o-container-checkout">
+    <div>
+        <h2>Betalen met pinpas</h2>
+        <div>
+            <p>Kies uw bank:</p>
+            <div class="box">
+                <label>
+                    <select>
+                        <option>ABN-Ambro Bank</option>
+                        <option>ASN Bank</option>
+                        <option>Bunq</option>
+                        <option>DHB Bank</option>
+                        <option>ING Bank</option>
+                        <option>Knab</option>
+                        <option>Rabobank</option>
+                        <option>SNS Bank</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="o-container-checkout-cardinfo">
+            <label for="inp6" class="inp">
+                <input type="text" id="inp6" placeholder="&nbsp;">
+                <span class="label">Pashouder</span>
+                <span class="border"></span>
+            </label>
+            <label for="inp7" class="inp">
+                <input type="text" id="inp7" placeholder="&nbsp;">
+                <span class="label">IBAN/ rekening NR.</span>
+                <span class="border"></span>
+            </label>
+            <label for="inp8" class="inp" style="margin-bottom: 3rem">
+                <input type="text" id="inp8" placeholder="&nbsp;">
+                <span class="label">Pas NR.</span>
+                <span class="border"></span>
+            </label>
+        </div>
+    </div>
+    <div class="o-container-checkout-cardinfo">
+        <h2>Bezorg addres</h2>
+        <label for="inp9" class="inp" style="margin-bottom: 3rem">
+            <input type="text" id="inp9" placeholder="&nbsp;">
+            <span class="label">Voornaam</span>
+            <span class="border"></span>
+        </label>
+        <label for="inp10" class="inp" style="margin-bottom: 3rem">
+            <input type="text" id="inp10" placeholder="&nbsp;">
+            <span class="label">Achternaam</span>
+            <span class="border"></span>
+        </label>
+        <label for="inp11" class="inp" style="margin-bottom: 3rem">
+            <input type="text" id="inp11" placeholder="&nbsp;">
+            <span class="label">Straatnaam</span>
+            <span class="border"></span>
+        </label>
+        <label for="inp12" class="inp" style="margin-bottom: 3rem">
+            <input type="text" id="inp12" placeholder="&nbsp;">
+            <span class="label">Stad</span>
+            <span class="border"></span>
+        </label>
+        <label for="inp14" class="inp" style="margin-bottom: 5rem">
+            <input type="text" id="inp14" placeholder="&nbsp;">
+            <span class="label">Postcode</span>
+            <span class="border"></span>
+        </label>
+        <a>Afrekenen</a>
+    </div>
 
 </section>
 

@@ -47,13 +47,17 @@ $pink-color: #ff7094;
   }
   &-reg{
     margin-right: 5rem;
-    line-height: 3;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     :first-child{
       margin-right: 2rem;
     }
+  }
+  &-hamburger{
+    display: none;
+    height: 2rem;
+    margin: 2rem;
   }
 }
 
@@ -71,4 +75,31 @@ $pink-color: #ff7094;
 }
 .sticky + .o-container-details{
   padding-top: 21rem;
+}
+
+@media screen and (max-width: 1013px) {
+  .c-header-nav ul {
+    display: none;
+    padding: 0;
+  }
+  .c-header-nav .c-header-hamburger {
+    float: right;
+    display: block;
+  }
+  .c-header-nav.responsive {
+    position: relative;
+  }
+  .c-header-nav.responsive .c-header-hamburger {
+    display: block;
+
+  }
+  .c-header-nav.responsive ul {
+    float: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    height: 30rem;
+    position: relative;
+    left: 5%;
+  }
 }
