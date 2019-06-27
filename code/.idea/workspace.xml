@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9b12342-5936-44f9-8c4b-8029ecc819e0" name="Default Changelist" comment="overhaul met modaal(details moeten nog afgemaakt)&#10;modal form is fucked">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/1.objects/container/_container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/1.objects/container/_container.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/2.components/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/2.components/footer/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.css.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,10 +101,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+            <state relative-caret-position="30">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -340,7 +334,7 @@
       <workItem from="1561358385400" duration="23332000" />
       <workItem from="1561443113051" duration="18872000" />
       <workItem from="1561531247728" duration="24249000" />
-      <workItem from="1561617962020" duration="10278000" />
+      <workItem from="1561617962020" duration="10802000" />
     </task>
     <task id="LOCAL-00001" summary="bezig met detail pagina">
       <created>1560864252619</created>
@@ -402,7 +396,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131658000" />
+    <option name="totallyTimeSpent" value="132182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -730,10 +724,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/faq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
