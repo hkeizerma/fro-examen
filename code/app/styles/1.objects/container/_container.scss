@@ -1,3 +1,13 @@
+$slate-color: rgb(16,24,50);
+$blue-color: #6c6cf0;
+$pink-color: #ff7094;
+@mixin transition-all {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
 .o-container {
   width: 100%;
   margin: 0 auto;
@@ -38,34 +48,96 @@
 
   &-hero{
     width: 100%;
-    color: #ffffff;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url("../media/hero_bg.jpg"), no-repeat, bottom;
+    color: #fefefe;
+    background: linear-gradient(0.25turn, $pink-color , $blue-color);
     background-size: cover;
-    text-align: left;
     padding: 15rem;
 
     &-content{
-      margin-top: 20rem;
+      margin-top: 15rem;
 
-      a{
+      h1{
+
+        span{
+
+        }
+      }
+      p{
+
+      }
+      a {
+        color: $slate-color;
+        cursor: pointer;
+        color: #fefefe;
+        display: inline-block;
+        letter-spacing: 0.075em;
+        padding: .8em 1em;
+        margin: auto 2em;
         position: relative;
-        top: 5rem;
-        color: #ffffff;
-        background: none;
-        padding: 1.5rem;
-        border: 0.2rem solid #ffffff;
-        border-radius: 2rem;
-
-        &:hover{
-          color: #8ed493;
-          border: 0.2rem solid #8ed493;
+        align-self: center;
+        text-transform: uppercase;
+        border: 3px $blue-color solid;
+        border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+        border-image-slice: 1 1 0 0;
+        z-index: 1;
+        box-shadow: -0.5em .5em transparentize($slate-color, 1);
+        transform-origin: left bottom;
+        @include transition-all;
+        &:before,
+        &:after {
+          border: 3px $blue-color solid;
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+        }
+        // SIDE
+        &:before {
+          border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%);
+          border-image-slice: 1 1 0 1;
+          left: -0.59em;
+          top: .15em;
+          width: .31em;
+          height: 100%;
+          transform: skewY(-45deg);
+        }
+        // BOTTOM
+        &:after {
+          border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+          border-image-slice: 1 1 1 0;
+          bottom: -0.61em;
+          right: 0.16em;
+          width: 100%;
+          height: .31em;
+          transform: skewX(-45deg);
+        }
+        // Shadow
+        &:hover {
+          //border-image-slice: 1;
+          background-color: white;
+          background-size: 90%;
+          color: $slate-color;
+          transform: translate(0.5em, -0.5em);
+          box-shadow: -1em 1em .15em transparentize($slate-color, .9);
+          // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+          &:before {
+            background: (linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%));
+            height: calc(100% - .13em);
+            border-image-slice: 1;
+          }
+          &:after {
+            background: (linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+            width: calc(100% - .13em);
+            border-image-slice: 1;
+          }
         }
       }
     }
   }
   &-products{
     box-shadow: inset 0 0 2rem #000000;
-    background: #ecffe7;
+    border-top: none;
+    background: #def2f1;
     padding: 10rem;
     display: flex;
     flex-direction: column;
@@ -76,7 +148,7 @@
     flex-direction: row;
     margin: 5rem;
     box-shadow: 0 0 2rem #000000;
-    background: rgb(255,255,255);
+    background: #fefefe;
 
     &-img{
       width: 30%;
@@ -88,75 +160,174 @@
       width: 70%;
       padding: 5rem;
 
-      a{
-        margin-top: 5rem;
-        color: #000000;
-        background: none;
-        padding: 1.5rem;
-        border: 0.2rem solid #000000;
-        border-radius: 2rem;
-
-        &:hover{
-          color: #8ed493;
-          border: 0.2rem solid #8ed493;
+      a {
+        color: $slate-color;
+        cursor: pointer;
+        display: inline-block;
+        letter-spacing: 0.075em;
+        padding: .8em 1em;
+        margin: auto 2em;
+        position: relative;
+        align-self: center;
+        text-transform: uppercase;
+        border: 3px $blue-color solid;
+        border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+        border-image-slice: 1 1 0 0;
+        z-index: 1;
+        box-shadow: -0.5em .5em transparentize($slate-color, 1);
+        transform-origin: left bottom;
+        @include transition-all;
+        &:before,
+        &:after {
+          border: 3px $blue-color solid;
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+        }
+        // SIDE
+        &:before {
+          border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%);
+          border-image-slice: 1 1 0 1;
+          left: -0.59em;
+          top: .15em;
+          width: .31em;
+          height: 100%;
+          transform: skewY(-45deg);
+        }
+        // BOTTOM
+        &:after {
+          border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+          border-image-slice: 1 1 1 0;
+          bottom: -0.61em;
+          right: 0.16em;
+          width: 100%;
+          height: .31em;
+          transform: skewX(-45deg);
+        }
+        // Shadow
+        &:hover {
+          //border-image-slice: 1;
+          background-color: white;
+          background-size: 90%;
+          transform: translate(0.5em, -0.5em);
+          box-shadow: -1em 1em .15em transparentize($slate-color, .9);
+          // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+          &:before {
+            background: (linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%));
+            height: calc(100% - .13em);
+            border-image-slice: 1;
+          }
+          &:after {
+            background: (linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+            width: calc(100% - .13em);
+            border-image-slice: 1;
+          }
         }
       }
     }
   }
 
   &-nextto{
-    margin: 15rem;
-    margin-bottom: 5rem;
+    margin: 10rem 10rem 5rem;
     display: flex;
     text-align: center;
 
     &-item{
       display: flex;
       flex-flow: column nowrap;
+      align-content: space-between;
     }
     &-l{
-      border-right: 0.5rem solid #70806d;
+      border-right: 0.5rem solid $blue-color;
       width: 50%;
     }
     &-r{
       width: 50%;
     }
     h2{
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 700;
     }
     p{
-      margin-top: 10rem;
+      margin-top: 5rem;
       margin-left: 15rem;
       margin-right: 15rem;
       font-size: 3rem;
       text-align: center;
     }
-    a{
-      margin: 10rem;
-      color: #ffffff;
-      background: none;
-      padding: 1.5rem;
-      border: 0.2rem solid #74b179;
-      border-radius: 2rem;
-      background: #74b179;
-      font-size: 2.5rem;
-
-
-      &:hover{
-        color: #ffffff;
-        border: 0.2rem solid #8ed493;
-        background: #8ed493;
+    a {
+      color: $slate-color;
+      cursor: pointer;
+      display: inline-block;
+      letter-spacing: 0.075em;
+      padding: .8em 1em;
+      margin: auto 2em;
+      position: relative;
+      align-self: center;
+      text-transform: uppercase;
+      border: 3px $blue-color solid;
+      border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+      border-image-slice: 1 1 0 0;
+      z-index: 1;
+      box-shadow: -0.5em .5em transparentize($slate-color, 1);
+      transform-origin: left bottom;
+      @include transition-all;
+      &:before,
+      &:after {
+        border: 3px $blue-color solid;
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+      }
+      // SIDE
+      &:before {
+        border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%);
+        border-image-slice: 1 1 0 1;
+        left: -0.59em;
+        top: .15em;
+        width: .31em;
+        height: 100%;
+        transform: skewY(-45deg);
+      }
+      // BOTTOM
+      &:after {
+        border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+        border-image-slice: 1 1 1 0;
+        bottom: -0.61em;
+        right: 0.16em;
+        width: 100%;
+        height: .31em;
+        transform: skewX(-45deg);
+      }
+      // Shadow
+      &:hover {
+        //border-image-slice: 1;
+        background-color: white;
+        background-size: 90%;
+        transform: translate(0.5em, -0.5em);
+        box-shadow: -1em 1em .15em transparentize($slate-color, .9);
+        // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+        &:before {
+          background: (linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%));
+          height: calc(100% - .13em);
+          border-image-slice: 1;
+        }
+        &:after {
+          background: (linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+          width: calc(100% - .13em);
+          border-image-slice: 1;
+        }
       }
     }
   }
 
   &-banner{
-    margin: 15rem;
-    margin-top: 5rem;
+    margin: 5rem 15rem 15rem;
     display: flex;
     flex-flow: row wrap;
-    border-top: 0.5rem solid #70806d;
+    border-top: 0.5rem solid $blue-color;
     padding-top: 5rem;
   }
   &-bannerimg{
@@ -167,33 +338,341 @@
     text-align: center;
 
     h2{
-      font-size: 7rem;
+      font-size: 5rem;
       font-weight: 700;
     }
     p{
       margin-top: 10rem;
       margin-left: 15rem;
       margin-right: 15rem;
-      font-size: 3rem;
+      font-size: 2rem;
     }
-    a{
-      margin-top: 5rem;
-      color: #ffffff;
-      background: none;
-      padding: 1.5rem;
-      border: 0.2rem solid #74b179;
-      border-radius: 2rem;
-      background: #74b179;
-      font-size: 2.5rem;
-
-      &:hover{
-        color: #ffffff;
-        border: 0.2rem solid #8ed493;
-        background: #8ed493;
+    a {
+      color: $slate-color;
+      cursor: pointer;
+      display: inline-block;
+      letter-spacing: 0.075em;
+      padding: .8em 1em;
+      margin: auto 2em;
+      position: relative;
+      align-self: center;
+      text-transform: uppercase;
+      border: 3px $blue-color solid;
+      border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+      border-image-slice: 1 1 0 0;
+      z-index: 1;
+      box-shadow: -0.5em .5em transparentize($slate-color, 1);
+      transform-origin: left bottom;
+      @include transition-all;
+      &:before,
+      &:after {
+        border: 3px $blue-color solid;
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+      }
+      // SIDE
+      &:before {
+        border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%);
+        border-image-slice: 1 1 0 1;
+        left: -0.59em;
+        top: .15em;
+        width: .31em;
+        height: 100%;
+        transform: skewY(-45deg);
+      }
+      // BOTTOM
+      &:after {
+        border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+        border-image-slice: 1 1 1 0;
+        bottom: -0.61em;
+        right: 0.16em;
+        width: 100%;
+        height: .31em;
+        transform: skewX(-45deg);
+      }
+      // Shadow
+      &:hover {
+        //border-image-slice: 1;
+        background-color: white;
+        background-size: 90%;
+        transform: translate(0.5em, -0.5em);
+        box-shadow: -1em 1em .15em transparentize($slate-color, .9);
+        // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+        &:before {
+          background: (linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%));
+          height: calc(100% - .13em);
+          border-image-slice: 1;
+        }
+        &:after {
+          background: (linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+          width: calc(100% - .13em);
+          border-image-slice: 1;
+        }
       }
     }
   }
-  //&-bannerfooter{
-  //  width: 100%;
-  //}
+  &-catalog {
+    box-shadow: inset 0 0 2rem #000000;
+    background: #D6D7FF;
+    padding: 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    :nth-of-type(even) {
+      background: #D6D7FF;
+    }
+  }
+  &-item{
+    width: 30%;
+    min-width: 350px;
+    box-shadow: 0 0 2rem #000000;
+    background: #fefefe;
+    text-align: center;
+    padding: 5rem;
+    display: flex;
+    flex-flow: nowrap column;
+    align-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 5rem;
+    img{
+      max-width: 100%;
+      margin: 3rem;
+    }
+    p{
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    a {
+      color: $slate-color;
+      cursor: pointer;
+      display: inline-block;
+      letter-spacing: 0.075em;
+      padding: .8em 1em;
+      margin: auto 2em;
+      position: relative;
+      align-self: center;
+      text-transform: uppercase;
+      border: 3px $blue-color solid;
+      border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+      border-image-slice: 1 1 0 0;
+      z-index: 1;
+      box-shadow: -0.5em .5em transparentize($slate-color, 1);
+      transform-origin: left bottom;
+      @include transition-all;
+      &:before,
+      &:after {
+        border: 3px $blue-color solid;
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+      }
+      // SIDE
+      &:before {
+        border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%);
+        border-image-slice: 1 1 0 1;
+        left: -0.59em;
+        top: .15em;
+        width: .31em;
+        height: 100%;
+        transform: skewY(-45deg);
+      }
+      // BOTTOM
+      &:after {
+        border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+        border-image-slice: 1 1 1 0;
+        bottom: -0.61em;
+        right: 0.16em;
+        width: 100%;
+        height: .31em;
+        transform: skewX(-45deg);
+      }
+      // Shadow
+      &:hover {
+        //border-image-slice: 1;
+        background-color: white;
+        background-size: 90%;
+        transform: translate(0.5em, -0.5em);
+        box-shadow: -1em 1em .15em transparentize($slate-color, .9);
+        // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+        &:before {
+          background: (linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%));
+          height: calc(100% - .13em);
+          border-image-slice: 1;
+        }
+        &:after {
+          background: (linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+          width: calc(100% - .13em);
+          border-image-slice: 1;
+        }
+      }
+    }
+  }
+  &-details{
+    margin: 10rem 15rem;
+    padding: 5rem 0;
+    border-top: 0.5rem solid #17252a;
+    border-bottom: 0.5rem solid #17252a;
+    display: flex;
+    flex-flow: row wrap;
+
+    &-l{
+      width: 40%;
+
+      &-gallery{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        img{
+          width: 30%;
+        }
+      }
+      img{
+        padding: 1rem;
+        border: 0.1rem solid #cfcfcf;
+      }
+    }
+    &-r{
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+      width: 50%;
+      margin: 5%;
+
+      &-price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem;
+
+        .btn{
+          border: 3px solid $pink-color;
+          display: inline-block;
+          padding: 10px;
+          width: 25rem;
+          position: relative;
+          text-align: center;
+          transition: background 600ms ease, color 600ms ease;
+        }
+
+        input[type="radio"].toggle {
+          display: none;
+          & + label{
+            cursor: pointer;
+            min-width: 60px;
+            &:hover{
+              background: none;
+              color: #1a1a1a;
+            }
+            &:after{
+              background: $pink-color;
+              content: "";
+              height: 100%;
+              position: absolute;
+              top: 0;
+              transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+              width: 100%;
+              z-index: -1;
+            }
+          }
+          &.toggle-left + label {
+            border-right: 0;
+            &:after{
+              left: 100%
+            }
+          }
+          &.toggle-right + label{
+            margin-left: -5px;
+            &:after{
+              left: -100%;
+            }
+          }
+          &:checked + label {
+            cursor: default;
+            color: #fff;
+            transition: color 200ms;
+            &:after{
+              left: 0;
+            }
+          }
+        }
+
+      }
+      textarea{
+        outline: none;
+        resize: none;
+        overflow: auto;
+        font-size: 1.5rem;
+      }
+      a {
+        color: $slate-color;
+        cursor: pointer;
+        display: inline-block;
+        letter-spacing: 0.075em;
+        padding: .8em 1em;
+        margin: auto 2em;
+        position: relative;
+        align-self: center;
+        text-transform: uppercase;
+        border: 3px $blue-color solid;
+        border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+        border-image-slice: 1 1 0 0;
+        z-index: 1;
+        box-shadow: -0.5em .5em transparentize($slate-color, 1);
+        transform-origin: left bottom;
+        @include transition-all;
+        &:before,
+        &:after {
+          border: 3px $blue-color solid;
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+        }
+        // SIDE
+        &:before {
+          border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%);
+          border-image-slice: 1 1 0 1;
+          left: -0.59em;
+          top: .15em;
+          width: .31em;
+          height: 100%;
+          transform: skewY(-45deg);
+        }
+        // BOTTOM
+        &:after {
+          border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+          border-image-slice: 1 1 1 0;
+          bottom: -0.61em;
+          right: 0.16em;
+          width: 100%;
+          height: .31em;
+          transform: skewX(-45deg);
+        }
+        // Shadow
+        &:hover {
+          //border-image-slice: 1;
+          background-color: white;
+          background-size: 90%;
+          transform: translate(0.5em, -0.5em);
+          box-shadow: -1em 1em .15em transparentize($slate-color, .9);
+          // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+          &:before {
+            background: (linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10%) 100%));
+            height: calc(100% - .13em);
+            border-image-slice: 1;
+          }
+          &:after {
+            background: (linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+            width: calc(100% - .13em);
+            border-image-slice: 1;
+          }
+        }
+      }
+    }
+  }
 }

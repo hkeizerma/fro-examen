@@ -2,11 +2,15 @@
   #GLOBAL STYLES
 \*------------------------------------*/
 
+
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+
 
 html {
   font-size: 62.5%;
@@ -30,6 +34,8 @@ body {
   overflow-x:hidden;
   margin: 0;
   background-size: contain;
+  background-color: #fefefe;
+
 }
 
 ::-webkit-scrollbar {
@@ -66,5 +72,6 @@ figure {
 
 a{
   text-decoration: none;
+  cursor: pointer;
 }
 
